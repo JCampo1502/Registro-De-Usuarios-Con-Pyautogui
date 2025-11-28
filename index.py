@@ -301,9 +301,9 @@ def addAcudienteSecction3(acudiente):
 # Llenar las secciones del registro
 def fillUserSections(user,i):    
     # Registrar Usuario
-    addUserSecction1(user,i)    
-    addUserSecction2(user,i)    
-    addUserSecction3(user,i)
+    addUserSecction1(user)    
+    addUserSecction2(user)
+    addUserSecction3(user)
     # Validar si es mayor de edad
     if user.edad>=18:
         # enviar formulario
@@ -315,9 +315,9 @@ def fillUserSections(user,i):
     # Registrar acudiente
     acudiente = user.acudiente
     
-    addAcudienteSecction1(acudiente,i)    
-    addAcudienteSecction2(acudiente,i)    
-    addAcudienteSecction3(acudiente,i)    
+    addAcudienteSecction1(acudiente)    
+    addAcudienteSecction2(acudiente)    
+    addAcudienteSecction3(acudiente)    
     goToNextForm()
 
 # llenar datos de login
